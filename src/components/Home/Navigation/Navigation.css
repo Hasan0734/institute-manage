@@ -1,6 +1,16 @@
-.container-width {
-  width: 1170px;
+.navbar {
+  position: absolute;
+  z-index: 5;
+  left: 0;
+  right: 0;
 }
+
 .nav-link {
   padding: 35px 15px;
+}
+.about-drop {
+  background-color: blue;
+}
+.about:hover .about-drop {
+  background-color: orange;
 }
