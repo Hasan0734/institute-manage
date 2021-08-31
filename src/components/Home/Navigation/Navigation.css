@@ -14,3 +14,41 @@
 .about:hover .about-drop {
   background-color: orange;
 }
+.navbar-top {
+  position: fixed !important;
+  top: 0;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.top-search-bar {
+  padding-left: 2.5rem !important;
+  border-left: 1px solid #ffffff2b;
+}
+.top-search-area {
+  background-color: #ffffff;
+  border: medium none;
+  border-radius: 10px;
+  box-shadow: 0 10px 40px -15px rgb(0 0 0 / 50%);
+  display: block;
+  border: 1px solid #e7e7e7;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 33, 71, 1) 0%,
+    rgba(6, 63, 130, 1) 49%
+  );
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 400px;
+  height: 150px;
+  position: fixed;
+  z-index: 99;
+}
+
+.search-btn {
+  position: relative;
+  top: -32px;
+  right: 10px;
+  background: none;
+  outline: none;
+  border: none;
+}

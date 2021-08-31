@@ -4,19 +4,7 @@ import slider2 from '../../../image/slider-2.jpg';
 import slider3 from '../../../image/slider-3.jpg';
 import './Slider.css';
 
-// const sliders = [
-//     {img: slider1,
-//     title: "Welcome to the University of Dhaka",
-//     text: "On the first day of July 1921 the University of Dhaka opened its doors to students with Sir P.J. Hartog ..."
-//     }  ,
-//     {img: slider2,
-//     title: "DU Students' Celebrating their Graduation Moment",
-//     text: "The main purpose of the University was to create new areas of knowledge and disseminate such knowledge nationally as well"
-//   }
-    
-// ]
 const Slider = () => {
-
   return (
     <div>
       <div
@@ -25,14 +13,14 @@ const Slider = () => {
         data-bs-ride="carousel"
       >
         <div className="carousel-inner">
-          <div className="carousel-item carusel-dark active">
-            <img src={slider1} className="d-block w-100 image-fluid" alt="..." />
+          <div className="carousel-item carusel-dark active" style={{backgroundImage: `url(${slider1})`}}>
+            {/* <img src={slider1} className="d-block w-100 image-fluid" alt="..." /> */}
           </div>
-          <div className="carousel-item carusel-dark">
-            <img src={slider2} className="d-block w-100 image-fluid" alt="..." />
+          <div className="carousel-item carusel-dark" style={{backgroundImage: `url(${slider2})`}}>
+            {/* <img src={slider2} className="d-block w-100 image-fluid" alt="..." /> */}
           </div>
-          <div className="carousel-item carusel-dark">
-            <img src={slider3} className="d-block w-100 image-fluid" alt="..." />
+          <div className="carousel-item carusel-dark" style={{backgroundImage: `url(${slider3})`}}>
+            {/* <img src={slider3} className="d-block w-100 image-fluid" alt="..." /> */}
           </div>
         </div>
         <button
