@@ -1,7 +1,5 @@
 import React from "react";
-import slider1 from '../../../image/slider-1.jpg';
-import slider2 from '../../../image/slider-2.jpg';
-import slider3 from '../../../image/slider-3.jpg';
+import SliderImage from "../SliderImage/SliderImage";
 import './Slider.css';
 
 const Slider = () => {
@@ -13,15 +11,7 @@ const Slider = () => {
         data-bs-ride="carousel"
       >
         <div className="carousel-inner">
-          <div className="carousel-item carusel-dark active" style={{backgroundImage: `url(${slider1})`}}>
-            {/* <img src={slider1} className="d-block w-100 image-fluid" alt="..." /> */}
-          </div>
-          <div className="carousel-item carusel-dark" style={{backgroundImage: `url(${slider2})`}}>
-            {/* <img src={slider2} className="d-block w-100 image-fluid" alt="..." /> */}
-          </div>
-          <div className="carousel-item carusel-dark" style={{backgroundImage: `url(${slider3})`}}>
-            {/* <img src={slider3} className="d-block w-100 image-fluid" alt="..." /> */}
-          </div>
+          <SliderImage/>
         </div>
         <button
           className="carousel-control-prev"

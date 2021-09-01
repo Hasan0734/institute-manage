@@ -26,24 +26,28 @@
 }
 .top-search-area {
   background-color: #ffffff;
-  border: medium none;
+  overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 10px 40px -15px rgb(0 0 0 / 50%);
   display: block;
-  border: 1px solid #e7e7e7;
   background: linear-gradient(
     90deg,
     rgba(0, 33, 71, 1) 0%,
     rgba(6, 63, 130, 1) 49%
   );
-  padding-top: 20px;
-  padding-bottom: 20px;
   width: 400px;
-  height: 150px;
+  height: 0px;
   position: fixed;
   z-index: 99;
+  transition-duration: 0.5s;
 }
-
+.top-search-area-1 {
+  transition-duration: 0.5s;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: 1px solid #e7e7e7;
+  height: 150px;
+}
 .search-btn {
   position: relative;
   top: -32px;

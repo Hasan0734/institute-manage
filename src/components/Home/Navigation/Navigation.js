@@ -147,10 +147,10 @@ const Navigation = () => {
       <div className="container">
         <div className="row d-flex justify-content-end">
           <div
-            className={`top-search-area pb-4  ${search ? 'd-block' : 'd-none'}`}
+            className={`top-search-area   ${search && 'top-search-area-1'}`}
             style={{ top: `${navScroll ? "94px" : "170px"}` }}
           >
-            <div >
+            <div className="pb-4" >
               <form className="text-end">
                <div className="text-center">
                <input type="radio" id="web" name="search" value="web" checked/>
