@@ -4,11 +4,11 @@ import Navigation from '../Navigation/Navigation';
 
 const Header = () => {
     return (
-        <>
+        <div>
           <HeaderTop></HeaderTop>
             <Navigation></Navigation>
             
-        </>
+        </div>
     );
 };
 

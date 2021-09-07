@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import './UniversityNumbers.css';
 import bg from '../../../image/bg.jpg'
+import CountUp from 'react-countup';
 const numbers = [
     {
         icon: faUniversity,
@@ -36,7 +37,7 @@ const UniversityNumbers = () => {
         <section style={{ marginTop: '90px' }}>
             <div className="container">
                 <div className="site-heading">
-                    <h2 className="text-center ">University of Dhaka Numbers</h2>
+                    <h2 className="text-center bottom-bg">University of Dhaka Numbers</h2>
                 </div>
                 </div>
                 <div className="numbers-area background-shadow" style={{backgroundImage: `url(${bg})`}}>
@@ -50,11 +51,14 @@ const UniversityNumbers = () => {
                                 </div>
                                 </div>
                                 <div className="numbers-data text-center text-white">
-                                    <h2>{number.number}{number.memeberUp  && "+"}</h2>
+                                    <h2><CountUp start={0} duration={5} end={number.number}/>{number.memeberUp  && "+"}</h2>
                                     <h4>{number.name}</h4>
                                 </div>
                             </div>
                         </div>)}
+                        <div className="text-danger bg-light">
+                        
+                        </div>
                     </div>
                     </div>
                 </div>

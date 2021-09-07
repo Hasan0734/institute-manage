@@ -3,12 +3,12 @@
   overflow: hidden;
   margin-top: -5px;
 }
-.site-heading h2{
+.bottom-bg{
   position: relative;
   padding-bottom: 20px;
 
 }
-.site-heading h2::before{
+.bottom-bg::before{
   content: "";
   background-color: orange;
   width: 40px;
@@ -50,4 +50,8 @@
   z-index: -1;
   left:0;
   opacity: 0.7;
+}
+.numbers-data h2{
+  font-weight: 700;
+  font-size:40px;
 }

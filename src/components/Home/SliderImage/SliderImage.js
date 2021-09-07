@@ -8,7 +8,7 @@ const SliderImage = () => {
 
  
   return (
-    <>
+    <div>
       {SliderData.map((slider, index) => (
         <div
           className={` ${
@@ -39,7 +39,7 @@ const SliderImage = () => {
           
         </div>
       ))}
-    </>
+    </div>
   );
 };
 
