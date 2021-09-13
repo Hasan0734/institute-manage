@@ -10,26 +10,32 @@
   background: #ffffff;
   transition: all 0.5s ease;
 }
+
 .area-content-box {
   height: 200px;
 }
+
 .prof-name {
   font-size: 14px;
   font-weight: bold;
   letter-spacing: 0.8px;
 }
+
 .prof-position {
   margin-bottom: 0;
   font-size: 15px;
   font-weight: bold;
 }
+
 .message-box {
   padding: 49px 30px;
   margin-left: -8px;
 }
+
 .text-justify {
   text-align: justify;
 }
+
 .text-justify button {
   margin-left: 27px;
   padding: 2px 5px;

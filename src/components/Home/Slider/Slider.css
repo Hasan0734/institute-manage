@@ -1,19 +1,20 @@
 .carusel-dark {
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: 1;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
 }
+
 .carusel-dark::after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100vh;
-  background: #000000;
-  opacity: 0.6;
-  z-index: -1;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    background: #000000;
+    opacity: 0.6;
+    z-index: -1;
 }

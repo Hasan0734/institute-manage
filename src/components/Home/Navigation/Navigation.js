@@ -20,9 +20,8 @@ const Navigation = () => {
   return (
     <header>
       <nav
-        className={`navbar navbar-expand-lg navbar-light   ${
-          navScroll && "bg-light navbar-top"
-        }`}
+        className={`navbar navbar-expand-lg navbar-light   ${navScroll && "bg-light navbar-top"
+          }`}
       >
         <div className="container">
           <a className="navbar-brand" href="#home">
@@ -48,9 +47,8 @@ const Navigation = () => {
             <ul className="navbar-nav me-auto mb-2 mb-lg-0 w-100 d-flex justify-content-between">
               <li className="nav-item dropdown">
                 <a
-                  className={`nav-link dropdown-toggle ${
-                    !navScroll && "text-white"
-                  }`}
+                  className={`nav-link dropdown-toggle ${!navScroll && "text-white"
+                    }`}
                   href="#about"
                   id="navbarDropdown"
                   role="button"
@@ -62,9 +60,8 @@ const Navigation = () => {
               </li>
               <li className="nav-item dropdown">
                 <a
-                  className={`nav-link dropdown-toggle ${
-                    !navScroll && "text-white"
-                  }`}
+                  className={`nav-link dropdown-toggle ${!navScroll && "text-white"
+                    }`}
                   href="#about"
                   id="navbarDropdown"
                   role="button"
@@ -76,9 +73,8 @@ const Navigation = () => {
               </li>
               <li className="nav-item dropdown">
                 <a
-                  className={`nav-link dropdown-toggle ${
-                    !navScroll && "text-white"
-                  }`}
+                  className={`nav-link dropdown-toggle ${!navScroll && "text-white"
+                    }`}
                   href="#about"
                   id="navbarDropdown"
                   role="button"
@@ -90,9 +86,8 @@ const Navigation = () => {
               </li>
               <li className="nav-item dropdown">
                 <a
-                  className={`nav-link dropdown-toggle ${
-                    !navScroll && "text-white"
-                  }`}
+                  className={`nav-link dropdown-toggle ${!navScroll && "text-white"
+                    }`}
                   href="#about"
                   id="navbarDropdown"
                   role="button"
@@ -104,9 +99,8 @@ const Navigation = () => {
               </li>
               <li className="nav-item dropdown">
                 <a
-                  className={`nav-link dropdown-toggle ${
-                    !navScroll && "text-white"
-                  }`}
+                  className={`nav-link dropdown-toggle ${!navScroll && "text-white"
+                    }`}
                   href="#about"
                   id="navbarDropdown"
                   role="button"
@@ -118,9 +112,8 @@ const Navigation = () => {
               </li>
               <li className="nav-item dropdown">
                 <a
-                  className={`nav-link dropdown-toggle ${
-                    !navScroll && "text-white"
-                  }`}
+                  className={`nav-link dropdown-toggle ${!navScroll && "text-white"
+                    }`}
                   href="#about"
                   id="navbarDropdown"
                   role="button"
@@ -132,12 +125,11 @@ const Navigation = () => {
               </li>
               <li className="nav-item ">
                 <a href="#search"
-                  className={`nav-link top-search-bar ${
-                    !navScroll && "text-white"
-                  }`}
-                  
+                  className={`nav-link top-search-bar ${!navScroll && "text-white"
+                    }`}
+
                 >
-                  <FontAwesomeIcon onClick={(e) => {setSearch(!search)}} icon={faSearch} />
+                  <FontAwesomeIcon onClick={(e) => { setSearch(!search) }} icon={faSearch} />
                 </a>
               </li>
             </ul>
@@ -152,14 +144,14 @@ const Navigation = () => {
           >
             <div className="pb-4" >
               <form className="text-end">
-               <div className="text-center">
-               <input type="radio" id="web" name="search" value="web" checked/>
-                <label className="m-2 text-white" for="web" >Web</label>
-                <input className="m-2" type="radio" id= "people" name="search" value="people"/>
-                <label className="text-white" for="people">People</label>
-               </div>
-               <input className="form-control" type="text" placeholder="Search"/>
-               <button className="search-btn" type="submit"><FontAwesomeIcon icon={faSearch}/></button>
+                <div className="text-center">
+                  <input type="radio" id="web" name="search" value="web" checked />
+                  <label className="m-2 text-white" for="web" >Web</label>
+                  <input className="m-2" type="radio" id="people" name="search" value="people" />
+                  <label className="text-white" for="people">People</label>
+                </div>
+                <input className="form-control" type="text" placeholder="Search" />
+                <button className="search-btn" type="submit"><FontAwesomeIcon icon={faSearch} /></button>
               </form>
             </div>
           </div>

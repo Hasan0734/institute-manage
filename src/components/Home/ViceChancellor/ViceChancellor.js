@@ -7,7 +7,7 @@ const ViceChancellor = () => {
       <div className="container">
         <div className="row">
           <div className="col-md-3">
-            <div className="feature-box">
+            <div className="feature-box" data-aos="fade-left" data-aos-duration="1000">
               <a
                 className="text-decoration-none text-dark area-box"
                 href="#professor"
@@ -25,7 +25,7 @@ const ViceChancellor = () => {
             </div>
           </div>
           <div className="col-md-9">
-            <div className="area-box message-box">
+            <div className="area-box message-box" data-aos="fade-up" data-aos-duration="1000">
               <h4>Message from the Vice Chancellor</h4>
               <p className="text-justify">
                 Welcome to the University of Dhaka’s website, featuring the

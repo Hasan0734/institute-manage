@@ -1,0 +1,38 @@
+.event-card-area{
+    background: #eee;
+}
+.event-card{
+    padding: 35px 35px;
+}
+.event-date{
+    text-align: center;
+    min-width: 75px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-top: -3px;
+}
+.event-date h2{
+    color: #ffb606;
+}
+.event-title{
+    padding-left: 30px;
+}
+.event-title h4{
+
+    height: 180px;
+    letter-spacing: 0;
+}
+.event-title a{
+    font-size: 19px;
+    text-decoration: none !important;
+    color: #002147;
+    transition-duration: 0.5s;
+}
+.event-title a:hover{
+    color: orange;
+}
+.btn-border-round{
+    padding: 5px 10px;
+    border-radius: 20px;
+}

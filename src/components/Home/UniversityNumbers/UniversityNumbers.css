@@ -1,14 +1,16 @@
-.site-heading {
+.section-heading {
   margin-bottom: 60px;
   overflow: hidden;
   margin-top: -5px;
 }
-.bottom-bg{
+
+.bottom-bg {
   position: relative;
   padding-bottom: 20px;
-
+  color: #002147;
 }
-.bottom-bg::before{
+
+.bottom-bg::before {
   content: "";
   background-color: orange;
   width: 40px;
@@ -17,41 +19,42 @@
   margin-left: -20px;
   position: absolute;
   bottom: 0;
-
 }
+
 .numbers-icon {
   border-radius: 50%;
   font-size: 40px;
   color: #ffb606;
   background: rgba(255, 255, 255, 0.3);
-
   height: 100px;
   width: 100px;
 }
-.background-shadow{
+
+.background-shadow {
   position: relative;
   z-index: 1;
 }
-.numbers-area{
 
+.numbers-area {
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
   padding: 60px 0;
-
 }
-.numbers-area::after{
+
+.numbers-area::after {
   content: "";
-  background-color: #000000 ;
+  background-color: #000000;
   height: 100%;
   width: 100%;
   position: absolute;
   top: 0;
   z-index: -1;
-  left:0;
+  left: 0;
   opacity: 0.7;
 }
-.numbers-data h2{
+
+.numbers-data h2 {
   font-weight: 700;
-  font-size:40px;
+  font-size: 40px;
 }

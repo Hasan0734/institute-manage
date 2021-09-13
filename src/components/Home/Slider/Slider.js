@@ -8,7 +8,7 @@ const Slider = () => {
       <div
         id="carouselExampleControls"
         className="carousel slide carousel-slider"
-        data-bs-ride="carousel"
+        data-bs-side="carousel"
       >
         <div className="carousel-inner">
           <SliderImage/>
