@@ -21,6 +21,9 @@ const EventWithNotice = () => {
                             <h2 className="text-center bottom-bg">Notice</h2>
                         </div>
                         <Notice></Notice>
+                        <div className="text-center mt-5">
+                            <button className="btn btn-warning px-4 py-2"><strong>View All Events</strong></button>
+                        </div>
                     </div>
                 </div>
             </div>

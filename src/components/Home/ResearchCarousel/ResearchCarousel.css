@@ -1,0 +1,20 @@
+.card {
+    border: none;
+    box-shadow: 0 0 10px #cccccc;
+}
+
+.owl-stage-outer {
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+}
+.owl-dot span{
+    background: #666666 !important;
+    height: 10px !important;
+    width: 20px !important;
+    border-radius: 30px !important;
+}
+.owl-dot .active span{
+    background: #ffb606 !important;
+    width: 40px !important;
+
+}

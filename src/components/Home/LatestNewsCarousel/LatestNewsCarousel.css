@@ -11,7 +11,8 @@
     border-radius: 30px;
     padding: 8px 15px;
     font-weight: 600;
-    transition: all 0.5s
+    transition: all 0.5s;
+    
    
 }
 .latest-news-btn:hover, .latest-news-btn:focus{
