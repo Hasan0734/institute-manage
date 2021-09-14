@@ -1,0 +1,36 @@
+.campus-section{
+    background-image: url('../../../image/./details_info.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
+    height: 350px;
+    position: relative;
+    z-index: -1;
+}
+.campus-section::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 350px;
+    background: #000000;
+    opacity: 0.6;
+    z-index: -1;
+
+}
+.campus-content{
+ z-index: 5;
+}
+.campus-content h2{
+    font-weight: 600;
+}
+.campus-content h4{
+    font-weight: 400;
+}
+.campus-button{
+    position: relative;
+    margin-top: 100px;
+}

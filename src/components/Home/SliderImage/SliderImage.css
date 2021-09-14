@@ -4,6 +4,7 @@
   background-size: cover;
   z-index: 1;
 }
+
 .carusel-dark::after {
   content: "";
   display: block;
@@ -17,9 +18,11 @@
   opacity: 0.6;
   z-index: -1;
 }
+
 .carusel-content {
   min-height: 100%;
 }
+
 .carusel-content h3 {
   font-size: 23px;
 }

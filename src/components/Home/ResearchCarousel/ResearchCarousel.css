@@ -7,13 +7,13 @@
     padding-top: 15px !important;
     padding-bottom: 15px !important;
 }
-.owl-dot span{
+.carousel-dot span{
     background: #666666 !important;
     height: 10px !important;
     width: 20px !important;
     border-radius: 30px !important;
 }
-.owl-dot .active span{
+.carousel-dots .active span{
     background: #ffb606 !important;
     width: 40px !important;
 

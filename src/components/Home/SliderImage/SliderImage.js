@@ -12,8 +12,8 @@ const SliderImage = () => {
       {SliderData.map((slider, index) => (
         <div
           className={` ${index - 1 === 0
-              ? "carousel-item carusel-dark active"
-              : "carousel-item carusel-dark"
+            ? "carousel-item carusel-dark active"
+            : "carousel-item carusel-dark"
             }`}
           style={{ backgroundImage: `url(${slider.image})` }}
         >

@@ -10,38 +10,40 @@ import 'aos/dist/aos.css';
 
 const arrryMethod = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 const LatestNewsCarousel = () => {
-  useEffect(() => {
-    AOS.init();
-  }, [])
-  return (
-    <div className="p-2">
-      <OwlCarousel
-        className='owl-theme'
-        dots={true}
-        autoplayTimeout={3000}
+    useEffect(() => {
+        AOS.init();
+    }, [])
+    return (
+        <div className="p-2">
+            <OwlCarousel
+                autoPlay={true}
+                autoplayTimeout={3000}
+                className='owl-theme'
+                dots={true}
 
-        loop margin={30}>
-        {
-          arrryMethod.map((arr) => <div>
-            <div class="card" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="300">
-              <img className="img-fluid" src={`https://picsum.photos/200/30${arr}`} style={{ height: '240px', width: '100%' }} alt="..." />
-              <div className="card-footer d-flex align-items-center">
-                <p className="m-0"> <FontAwesomeIcon className="text-warning" icon={faCalendarAlt} />  03 Sep, 2021</p>
-              </div>
-              <div className="card-body px-4 pb-4">
-                <h5 className="card-title pb-5">Lorem ipsum dolor sit amet, consectetur adip</h5>
 
-                <button className="btn latest-news-btn">+ READ MORE</button>
-              </div>
+                loop margin={30}>
+                {
+                    arrryMethod.map((arr) => <div>
+                        <div class="card" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="300">
+                            <img className="img-fluid" src={`https://picsum.photos/200/30${arr}`} style={{ height: '240px', width: '100%' }} alt="..." />
+                            <div className="card-footer d-flex align-items-center">
+                                <p className="m-0"> <FontAwesomeIcon className="text-warning" icon={faCalendarAlt} />  03 Sep, 2021</p>
+                            </div>
+                            <div className="card-body px-4 pb-4">
+                                <h5 className="card-title pb-5">Lorem ipsum dolor sit amet, consectetur adip</h5>
+
+                                <button className="btn latest-news-btn">+ READ MORE</button>
+                            </div>
+                        </div>
+                    </div>)
+                }
+            </OwlCarousel>
+            <div className="text-center">
+                <button className='btn btn-warning px-4 py-2'><strong>View All News</strong></button>
             </div>
-          </div>)
-        }
-      </OwlCarousel>
-      <div className="text-center">
-        <button className='btn btn-warning px-4 py-2'><strong>View All News</strong></button>
-      </div>
-    </div>
-  );
+        </div>
+    );
 };
 
 export default LatestNewsCarousel;

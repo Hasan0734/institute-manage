@@ -8,7 +8,7 @@ import './ResearchCarousel.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-const arrryMethod = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+const data = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 const ResearchCarousel = () => {
   useEffect(() => {
     AOS.init();
@@ -19,26 +19,27 @@ const ResearchCarousel = () => {
         className='owl-theme'
         dots={true}
         autoplayTimeout={3000}
-
+        dotClass="carousel-dot owl-dot"
+        dotsClass="carousel-dots owl-dots"
         loop margin={30}>
         {
-          arrryMethod.map((arr) => <div>
+          data.map((dt) => <div>
             <div class="card" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="300">
-              <img className="img-fluid" src={`https://picsum.photos/200/30${arr}`} style={{ height: '240px', width: '100%' }} alt="..." />
+              <img className="img-fluid" src={`https://picsum.photos/200/30${dt}`} style={{ height: '240px', width: '100%' }} alt="..." />
               <div className="card-footer d-flex align-items-center">
                 <p className="m-0"> <FontAwesomeIcon className="text-warning" icon={faCalendarAlt} />  03 Sep, 2021</p>
               </div>
               <div className="card-body px-4 pb-4">
-                <h5 className="card-title pb-5">Lorem ipsum dolor sit amet, consectetur adip</h5>
+                <h5 className="card-title pb-5 border-bottom">Lorem ipsum dolor sit amet, consectetur adip</h5>
 
-                <button className="btn btn-outline-dark btn-border-round">+ READ MORE</button>
+                <button className="btn btn-outline-dark btn-border-round px-3 mt-4">+ READ MORE</button>
               </div>
             </div>
           </div>)
         }
       </OwlCarousel>
       <div className="text-center">
-        <button className='btn btn-warning px-4 py-2'><strong>View All News</strong></button>
+        <button className='btn btn-warning px-4 py-2'><strong>View All Research Activites</strong></button>
       </div>
     </div>
   );

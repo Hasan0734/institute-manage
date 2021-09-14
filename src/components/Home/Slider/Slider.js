@@ -11,7 +11,7 @@ const Slider = () => {
         data-bs-side="carousel"
       >
         <div className="carousel-inner">
-          <SliderImage/>
+          <SliderImage />
         </div>
         <button
           className="carousel-control-prev"

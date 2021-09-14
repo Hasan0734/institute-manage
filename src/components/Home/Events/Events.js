@@ -16,8 +16,8 @@ const Events = () => {
                             <p>Sep, 2021 </p>
                         </div>
                         <div className="event-title card-title ">
-                            <h4 className="text-justify"><a href="#">আগামী ১০ সেপ্টেম্বর ২০২১ইং তারিখ বিশ্ব আত্নহত্যা প্রতিরোধ দিবস উপলক্ষ্যে একটি ওয়েবিনার অনুষ্ঠিত হবে</a></h4>
-                            <button className="btn btn-outline-dark btn-border-round mt-4"><FontAwesomeIcon icon={faPlus} /> Read More</button>
+                            <h4 className="text-justify"><a href="#event">আগামী ১০ সেপ্টেম্বর ২০২১ইং তারিখ বিশ্ব আত্নহত্যা প্রতিরোধ দিবস উপলক্ষ্যে একটি ওয়েবিনার অনুষ্ঠিত হবে</a></h4>
+                            <button className="btn btn-outline-dark btn-border-round mt-4 px-3"><FontAwesomeIcon icon={faPlus} /> Read More</button>
                         </div>
                     </div>
                 </div>
