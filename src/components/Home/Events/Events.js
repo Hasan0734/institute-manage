@@ -8,7 +8,7 @@ const Events = () => {
     return (
         <div className="row">
             {events.map(arr => <div className="col-md-6">
-                <div className="card event-card-area mb-5">
+                <div className="card event-card-area mb-5"   data-aos="zoom-in-up" data-aos-duration="2000">
                     <img className="img-fluid" src={`https://picsum.photos/200/30${arr}`} style={{ height: '240px', width: '100%' }} alt="..." />
                     <div className="card-body d-flex event-card">
                         <div className="event-date">

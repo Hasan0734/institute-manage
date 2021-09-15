@@ -1,5 +1,6 @@
 import React from 'react';
 import EventWithNotice from '../EventsWithNotice/EventWithNotice';
+import FeaturedAchivments from '../FeaturedAchivments/FeaturedAchivments';
 import Header from '../Header/Header';
 import LatestNews from '../LatestNews/LatestNews';
 import OurCampas from '../OurCampas/OurCampus';
@@ -25,6 +26,7 @@ const Home = () => {
             <EventWithNotice />
             <Research />
             <OurCampas />
+            <FeaturedAchivments />
             <h1>This is Home</h1>
             <h1>This is Home</h1>
             <h1>This is Home</h1>

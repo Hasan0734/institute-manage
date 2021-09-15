@@ -1,3 +1,19 @@
+.read-more-button {
+  font-size: 15px;
+  font-weight: 500;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  line-height: 30px;
+
+}
+.read-more-button:hover{
+  box-shadow: 5px 5px 10px lightgray;
+}
+.read-more-button .btn-icon {
+  font-size: 30px;
+}
+
 .wl-section {
   padding-top: 60px;
   padding-bottom: 60px;

@@ -24,7 +24,7 @@ const ResearchCarousel = () => {
         loop margin={30}>
         {
           data.map((dt) => <div>
-            <div class="card" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="300">
+            <div class="card" data-aos="zoom-in" data-aos-duration="800"  data-aos-delay="300">
               <img className="img-fluid" src={`https://picsum.photos/200/30${dt}`} style={{ height: '240px', width: '100%' }} alt="..." />
               <div className="card-footer d-flex align-items-center">
                 <p className="m-0"> <FontAwesomeIcon className="text-warning" icon={faCalendarAlt} />  03 Sep, 2021</p>
