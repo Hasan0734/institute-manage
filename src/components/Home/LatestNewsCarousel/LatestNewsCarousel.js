@@ -16,8 +16,9 @@ const LatestNewsCarousel = () => {
     return (
         <div className="p-2">
             <OwlCarousel
-                autoPlay={true}
+                autoplay={true}
                 autoplayTimeout={3000}
+                autoplayHoverPause={true}
                 className='owl-theme'
                 dots={true}
 

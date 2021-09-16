@@ -6,7 +6,7 @@ import StudentAchievment from '../StudentAchievment/StudentAchievment';
 import './FeaturedAchivments.css'
 const FeaturedAchivments = () => {
     return (
-        <section className="pt-5">
+        <section className="py-5 ">
             <div className="container mt-4">
                 <div className="row">
                     <div className="col-md-8">

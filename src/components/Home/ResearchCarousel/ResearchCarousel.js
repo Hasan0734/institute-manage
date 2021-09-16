@@ -18,7 +18,9 @@ const ResearchCarousel = () => {
       <OwlCarousel
         className='owl-theme'
         dots={true}
+        autoplay={true}
         autoplayTimeout={3000}
+        autoplayHoverPause={true}
         dotClass="carousel-dot owl-dot"
         dotsClass="carousel-dots owl-dots"
         loop margin={30}>

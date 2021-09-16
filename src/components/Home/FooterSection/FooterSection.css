@@ -1,0 +1,19 @@
+.footer-list-item{
+    list-style: none;
+    line-height: 40px;
+    padding-left: 0;
+}
+.footer-list-item li a .list-icon{
+    color: #656565;
+    font-weight: 400;
+}
+.contact-info p{
+margin-bottom: 0;
+}
+.contact-info p a{
+    color: white;
+    text-decoration: none;
+}
+.footer-bottom{
+    background-color: rgb(15 46 82);
+}
