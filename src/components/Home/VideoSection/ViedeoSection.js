@@ -13,7 +13,7 @@ const videos = [
     { link: 'https://www.youtube.com/embed/3u4fPARSWgU', title: "National Mourning Day 2021 observed at Dhaka University" },
     { link: 'https://www.youtube.com/embed/ey8vCIR_GWg', title: "জুমআর খুতবা: ঢাকা বিশ্ববিদ্যালয়-১০০ বছর পূর্তি এবং বিশ্ববিদ্যালয় কেন্দ্রীয় মসজিদ" },
     { link: 'https://www.youtube.com/embed/bgKRMw3hDI8', title: "Bangabandhu's Birth Anniversary | Dhaka University" },
-    
+
 ]
 const ViedeoSection = () => {
     return (
@@ -26,7 +26,11 @@ const ViedeoSection = () => {
                     autoplay={true}
                     autoplayTimeout={3000}
                     autoplayHoverPause={true}
-                    loop margin={30} >
+                    loop margin={30}
+                    data-aos="fade-up-right"
+                    data-aos-delay={500}
+                    data-aos-duration={1000}
+                >
 
                     {videos.map(video => <div className="">
 

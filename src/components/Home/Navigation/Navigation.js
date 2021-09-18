@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 import lightLogo from "../../../image/du-logo-light.png";
 import darkLogo from "../../../image/du-logo.png";
+import AboutDropdown from "../AboutDropdown/AboutDropdown";
 import "./Navigation.css";
 const Navigation = () => {
   const [navScroll, setNavScroll] = useState(false);
@@ -18,7 +19,7 @@ const Navigation = () => {
   window.addEventListener("scroll", changeNave);
 
   return (
-    <header>
+    <header style={{ position: 'relative' }}>
       <nav
         className={`navbar navbar-expand-lg navbar-light   ${navScroll && "bg-light navbar-top"
           }`}
@@ -45,9 +46,9 @@ const Navigation = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0 w-100 d-flex justify-content-between">
-              <li className="nav-item dropdown">
+              <li className="nav-item">
                 <a
-                  className={`nav-link dropdown-toggle ${!navScroll && "text-white"
+                  className={`nav-link dropdown-toggle about-nav ${!navScroll && "text-white"
                     }`}
                   href="#about"
                   id="navbarDropdown"
@@ -57,6 +58,9 @@ const Navigation = () => {
                 >
                   ABOUT
                 </a>
+                <div className="about-menu container dropdown-menu">
+                  <AboutDropdown />
+                </div>
               </li>
               <li className="nav-item dropdown">
                 <a
@@ -157,10 +161,8 @@ const Navigation = () => {
           </div>
         </div>
       </div>
-      {/* <div className="about-drop">
 
-         <AboutDropdown ></AboutDropdown>
-      </div> */}
+
     </header>
   );
 };

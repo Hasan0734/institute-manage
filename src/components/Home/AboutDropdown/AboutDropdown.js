@@ -2,7 +2,7 @@ import React from 'react';
 
 const AboutDropdown = () => {
     return (
-        <div className="container">
+        <React.Fragment>
             <div className='row'>
                 <div className="col-md-4">
                     <h6>ABOUT UNIVERISITY</h6>
@@ -35,7 +35,7 @@ const AboutDropdown = () => {
 
                 </div>
             </div>
-        </div>
+        </React.Fragment>
     );
 };
 

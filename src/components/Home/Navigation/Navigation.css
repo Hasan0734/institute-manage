@@ -59,3 +59,11 @@
     outline: none;
     border: none;
 }
+
+.navbar-expand-lg .navbar-nav .dropdown-menu{
+    left: 20%;
+    background: #fff;
+}
+.about-nav:hover .about-menu{
+    background:orange; 
+}
