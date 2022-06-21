@@ -4,9 +4,9 @@ import './Slider.css';
 
 const Slider = () => {
   return (
-    <div >
+    <React.Fragment>
           <SliderImage />
-    </div>
+    </React.Fragment>
   );
 };
 

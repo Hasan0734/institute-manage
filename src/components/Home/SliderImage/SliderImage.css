@@ -80,18 +80,22 @@
 }
 
 .owl-next {
-  margin-right: -42px !important;
+  margin-right: -50px !important;
   color: white !important;
+  /* display: none !important; */
 }
 
 .owl-prev {
-  margin-left: -42px !important;
+  margin-left: -50px !important;
   color: white !important;
+  /* display: none !important; */
 
 }
 .owl-carousel:hover .owl-prev{
 margin-left: 30px !important;
+display: block !important;
 }
 .owl-carousel:hover .owl-next{
   margin-right: 30px !important;
+  display: block !important;
 }

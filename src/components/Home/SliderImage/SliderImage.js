@@ -12,7 +12,7 @@ const SliderImage = () => {
 
   
   return (
-    <div>
+    <div className="overflow-hidden">
       <OwlCarousel
         className='owl-theme'
         dots={false}
