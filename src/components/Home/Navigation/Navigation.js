@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import lightLogo from "../../../image/du-logo-light.png";
 import darkLogo from "../../../image/du-logo.png";
 import AboutDropdown from "../AboutDropdown/AboutDropdown";
+import Dropdown from "./Dropdown/Dropdown";
 import "./Navigation.css";
 const Navigation = () => {
   const [navScroll, setNavScroll] = useState(false);
@@ -24,7 +25,7 @@ const Navigation = () => {
         className={`navbar navbar-expand-lg navbar-light   ${navScroll && "bg-light navbar-top"
           }`}
       >
-        <div className="container">
+        <div className="container position-relative ">
           <a className="navbar-brand" href="#home">
             <img
               className="img-fluid"
@@ -48,32 +49,29 @@ const Navigation = () => {
             <ul className="navbar-nav me-auto mb-2 mb-lg-0 w-100 d-flex justify-content-between">
               <li className="nav-item">
                 <a
-                  className={`nav-link dropdown-toggle about-nav ${!navScroll && "text-white"
+                  className={`nav-link about-nav ${!navScroll ? "text-white" : ""
                     }`}
                   href="#about"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
+                
                 >
                   ABOUT
                 </a>
-                <div className="about-menu container dropdown-menu">
-                  <AboutDropdown />
+                <div className="about-menu dropdown_hide  container position-absolute start-0">
+                  <Dropdown/>
                 </div>
               </li>
-              <li className="nav-item dropdown">
+              <li className="nav-item">
                 <a
-                  className={`nav-link dropdown-toggle ${!navScroll && "text-white"
+                  className={`nav-link academics-nav ${!navScroll && "text-white"
                     }`}
                   href="#about"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
+            
                 >
                   ACADEMICS
                 </a>
+                <div className="academics-menu dropdown_hide  container position-absolute start-0">
+                  <Dropdown/>
+                </div>
               </li>
               <li className="nav-item dropdown">
                 <a

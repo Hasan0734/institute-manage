@@ -60,10 +60,16 @@
     border: none;
 }
 
-.navbar-expand-lg .navbar-nav .dropdown-menu{
-    left: 20%;
-    background: #fff;
+.dropdown_hide{
+   opacity: 0;
+   transition: 0.5s;
+   top: 70%;
 }
-.about-nav:hover .about-menu{
-    background:orange; 
+.nav-item .about-nav:hover + .dropdown_hide{
+   opacity: 1;
+    top: 80%;
+}
+.nav-item .academics-nav:hover + .dropdown_hide{
+   opacity: 1;
+    top: 80%;
 }
