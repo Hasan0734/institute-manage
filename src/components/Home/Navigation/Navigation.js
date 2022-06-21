@@ -57,7 +57,9 @@ const Navigation = () => {
                   ABOUT
                 </a>
                 <div className="about-menu dropdown_hide  container position-absolute start-0">
-                  <Dropdown/>
+                  <Dropdown>
+                    
+                    </Dropdown>
                 </div>
               </li>
               <li className="nav-item">
