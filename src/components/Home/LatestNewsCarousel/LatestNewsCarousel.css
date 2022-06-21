@@ -2,7 +2,9 @@
     border: none;
     box-shadow: 0 0 10px #cccccc;
 }
-
+.card-title-news{
+    height: 150px;
+}
 .owl-stage-outer {
     padding-top: 15px !important;
     padding-bottom: 15px !important;

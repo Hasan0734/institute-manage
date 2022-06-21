@@ -5,14 +5,21 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 import { faCalendarAlt } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './ResearchCarousel.css'
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+
 
 const data = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 const ResearchCarousel = () => {
-  useEffect(() => {
-    AOS.init();
-  }, [])
+  const responsivenes = {
+    0:{
+        items:1
+    },
+    600:{
+        items:3
+    },
+    1000:{
+        items:3
+    }
+}
   return (
     <div className="p-2">
       <OwlCarousel
@@ -23,12 +30,13 @@ const ResearchCarousel = () => {
         autoplayHoverPause={true}
         dotClass="carousel-dot owl-dot"
         dotsClass="carousel-dots owl-dots"
+        responsive={responsivenes}
         loop margin={30}>
         {
           data.map((dt) => <div>
             <div class="card" data-aos="zoom-in" data-aos-duration="800"  data-aos-delay="300">
               <img className="img-fluid" src={`https://picsum.photos/200/30${dt}`} style={{ height: '240px', width: '100%' }} alt="..." />
-              <div className="card-footer d-flex align-items-center">
+              <div className="d-flex align-items-center justify-content-end p-3">
                 <p className="m-0"> <FontAwesomeIcon className="text-warning" icon={faCalendarAlt} />  03 Sep, 2021</p>
               </div>
               <div className="card-body px-4 pb-4">

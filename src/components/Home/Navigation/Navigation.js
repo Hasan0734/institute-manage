@@ -24,7 +24,7 @@ const Navigation = () => {
         className={`navbar navbar-expand-lg navbar-light   ${navScroll && "bg-light navbar-top"
           }`}
       >
-        <div className="container">
+        <div className=" container ">
           <a className="navbar-brand" href="#home">
             <img
               className="img-fluid"
@@ -58,13 +58,17 @@ const Navigation = () => {
                 >
                   ABOUT
                 </a>
-                <div className="about-menu container dropdown-menu">
-                  <AboutDropdown />
-                </div>
+                <ul className="dropdown-menu container" aria-labelledby="navbarDropdown">
+                    <li>
+                      <div  style={{height: '300px', padding: '15px'}}>
+                        <h1>Hello world</h1>
+                      </div>
+                    </li>
+                </ul>
               </li>
-              <li className="nav-item dropdown">
+              {/* <li className="nav-item ">
                 <a
-                  className={`nav-link dropdown-toggle ${!navScroll && "text-white"
+                  className={`nav-link dropdown-toggle about-nav ${!navScroll && "text-white"
                     }`}
                   href="#about"
                   id="navbarDropdown"
@@ -74,6 +78,9 @@ const Navigation = () => {
                 >
                   ACADEMICS
                 </a>
+                <div className=" container dropdown-menu">
+                  <AboutDropdown />
+                </div>
               </li>
               <li className="nav-item dropdown">
                 <a
@@ -135,7 +142,7 @@ const Navigation = () => {
                 >
                   <FontAwesomeIcon onClick={(e) => { setSearch(!search) }} icon={faSearch} />
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>

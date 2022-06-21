@@ -16,6 +16,17 @@ const videos = [
 
 ]
 const ViedeoSection = () => {
+    const responsivenes = {
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:3
+        }
+    }
     return (
         <section className="py-5">
             <div className="container mt-4">
@@ -30,6 +41,7 @@ const ViedeoSection = () => {
                     data-aos="fade-up-right"
                     data-aos-delay={500}
                     data-aos-duration={1000}
+                    responsive={responsivenes}
                 >
 
                     {videos.map(video => <div className="">

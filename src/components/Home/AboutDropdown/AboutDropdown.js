@@ -3,8 +3,10 @@ import React from 'react';
 const AboutDropdown = () => {
     return (
         <React.Fragment>
-            <div className='row'>
-                <div className="col-md-4">
+            <div className="row">
+
+        
+                <div className="col-menu col-md-4">
                     <h6>ABOUT UNIVERISITY</h6>
 
                     <ul>
@@ -14,7 +16,7 @@ const AboutDropdown = () => {
                     </ul>
 
                 </div>
-                <div className="col-md-4">
+                <div className="col-menu col-md-4">
                     <h6>ABOUT UNIVERISITY</h6>
 
                     <ul>
@@ -24,7 +26,7 @@ const AboutDropdown = () => {
                     </ul>
 
                 </div>
-                <div className="col-md-4">
+                <div className="col-menu col-md-4">
                     <h6>ABOUT UNIVERISITY</h6>
 
                     <ul>
@@ -34,7 +36,7 @@ const AboutDropdown = () => {
                     </ul>
 
                 </div>
-            </div>
+                </div>
         </React.Fragment>
     );
 };

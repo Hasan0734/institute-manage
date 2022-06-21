@@ -60,10 +60,9 @@
     border: none;
 }
 
-.navbar-expand-lg .navbar-nav .dropdown-menu{
-    left: 20%;
-    background: #fff;
-}
-.about-nav:hover .about-menu{
-    background:orange; 
+
+
+.navbar .nav-item:hover .dropdown-menu {
+    display: block;
+  
 }

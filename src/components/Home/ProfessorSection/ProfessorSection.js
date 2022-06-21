@@ -26,7 +26,7 @@ const ProfessorSection = () => {
             <div className="container">
                 <div className="row" data-aos="fade-left" data-aos-duration="1000" >
                     {
-                        professors.map(professor => <div className="col-md-4">
+                        professors.map(professor => <div className="col-md-4 ">
 
                             <div className="card">
                                 <a href="#professor" className="area-box text-decoration-none text-dark">
