@@ -5,14 +5,21 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 import { faCalendarAlt } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './LatestNewsCarousel.css';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+
 
 const arrryMethod = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 const LatestNewsCarousel = () => {
-    useEffect(() => {
-        AOS.init();
-    }, [])
+const responsivenes = {
+    0:{
+        items:1
+    },
+    600:{
+        items:3
+    },
+    1000:{
+        items:3
+    }
+}
     return (
         <div className="p-2">
             <OwlCarousel
@@ -21,7 +28,7 @@ const LatestNewsCarousel = () => {
                 autoplayHoverPause={true}
                 className='owl-theme'
                 dots={true}
-
+                responsive={responsivenes}
 
                 loop margin={30}>
                 {
@@ -32,7 +39,7 @@ const LatestNewsCarousel = () => {
                                 <p className="m-0"> <FontAwesomeIcon className="text-warning" icon={faCalendarAlt} />  03 Sep, 2021</p>
                             </div>
                             <div className="card-body px-4 pb-4">
-                                <h5 className="card-title pb-5">Lorem ipsum dolor sit amet, consectetur adip</h5>
+                                <h5 className="card-title-news">Lorem ipsum dolor sit amet, consectetur adip</h5>
 
                                 <button className="btn latest-news-btn">+ READ MORE</button>
                             </div>

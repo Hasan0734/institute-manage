@@ -31,9 +31,9 @@ const SliderImage = () => {
         {SliderData.map((slider) => (
          
           <div className="carousel-dark" style={{ backgroundImage: `url(${slider.image})`, }} >
-            <div className="container carousel-content d-flex align-items-center">
+            <div className="container container-sm carousel-content d-flex align-items-center">
               <div className="row">
-                <div className="col-md-7 text-white">
+                <div className="col-md-7 col-sm-12 text-white">
                   <div className="pe-5">
                     <h3 className="slider-title" >{slider.title}</h3>
                     <p className="slider-text">{slider.text}</p>
@@ -42,7 +42,7 @@ const SliderImage = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-md-5 text-white">
+                <div className="col-md-5 col-sm-12 mt-sm-0 mt-5 text-white">
                   {slider.info.map((info, index, array) => (
                     <h3 className={`fs-4 info-${array.length === 2 ? index + 5 : index}`}>
                       <FontAwesomeIcon className="text-warning" icon={info.icon} /> {info.text}</h3>))}

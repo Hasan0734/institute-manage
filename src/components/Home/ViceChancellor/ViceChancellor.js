@@ -4,10 +4,10 @@ import "./ViceChancellor.css";
 const ViceChancellor = () => {
   return (
     <section className="feature-area">
-      <div className="container">
+      <div className="container ">
         <div className="row">
-          <div className="col-md-3">
-            <div className="feature-box" data-aos="fade-left" data-aos-duration="1000">
+          <div className="col-md-3 col-sm-12 mx-2 mx-sm-0" data-aos ="fade-left" data-aos-duration="1000">
+            <div className="feature-box " >
               <a
                 className="text-decoration-none text-dark area-box"
                 href="#professor"
@@ -24,8 +24,8 @@ const ViceChancellor = () => {
               </a>
             </div>
           </div>
-          <div className="col-md-9">
-            <div className="area-box message-box" data-aos="fade-up" data-aos-duration="1000">
+          <div className="col-md-9 col-sm-12 mt-3 mt-sm-0 mx-2 mx-sm-0 " data-aos ="fade-up" data-aos-duration="1000">
+            <div className="area-box message-box " >
               <h4>Message from the Vice Chancellor</h4>
               <p className="text-justify">
                 Welcome to the University of Dhaka’s website, featuring the

@@ -1,0 +1,45 @@
+.menu_title {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 15px;
+    color: #428bca;
+    margin-bottom: 8px;
+    letter-spacing: 0.4px;
+}
+
+.menu_link {
+    border-bottom: medium none;
+    color: #002147;
+    display: block;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 1px;
+    padding: 4px 0;
+    text-align: left;
+    width: 100%;
+    text-decoration: none;
+    transition: all 0.6s
+}
+
+.menu_link:hover {
+    color: #ffb606;
+    margin-left: 9px;
+}
+.menu_link {
+    border-bottom: medium none;
+    color: #002147;
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 1px;
+    padding: 4px 0;
+    text-align: left;
+    width: 100%;
+    text-decoration: none;
+    transition: all 0.6s
+}
+
+.menu_link:hover {
+    color: #ffb606;
+    margin-left: 9px;
+}

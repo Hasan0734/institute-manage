@@ -1,10 +1,13 @@
 import React from 'react';
-import './Dropdown.css'
-const Dropdown = () => {
+import './Dropdown.css';
+
+const Dropdown = ({children}) => {
     return (
-        <div className="nav_dropdown">
-            
+       <React.Fragment>
+         <div className="nav_dropdown">
+            {children}
         </div>
+       </React.Fragment>
     );
 };
 

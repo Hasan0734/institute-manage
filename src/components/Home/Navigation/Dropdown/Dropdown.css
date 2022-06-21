@@ -1,4 +1,6 @@
 .nav_dropdown {
-    height: 200px;
+    /* height: 230px; */
     background: white;
+    padding: 25px 30px;
+    overflow: hidden;
 }

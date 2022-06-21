@@ -7,6 +7,7 @@
 
 .nav-link {
     padding: 35px 15px;
+    font-weight: 600;
 }
 
 .about-drop {
@@ -35,7 +36,7 @@
     border-radius: 10px;
     box-shadow: 0 10px 40px -15px rgb(0 0 0 / 50%);
     display: block;
-    background: linear-gradient( 90deg, rgba(0, 33, 71, 1) 0%, rgba(6, 63, 130, 1) 49%);
+    background: linear-gradient(90deg, rgba(0, 33, 71, 1) 0%, rgba(6, 63, 130, 1) 49%);
     width: 400px;
     height: 0px;
     position: fixed;
@@ -60,16 +61,41 @@
     border: none;
 }
 
-.dropdown_hide{
-   opacity: 0;
-   transition: 0.5s;
-   top: 70%;
+.dropdown_hide {
+    opacity: 0;
+    transition: all 0.2s;
+    top: 70%;
+    visibility: hidden;
 }
-.nav-item .about-nav:hover + .dropdown_hide{
-   opacity: 1;
+
+.dropdown_hide:hover {
+    opacity: 1;
     top: 80%;
+    /* visibility: hidden; */
 }
-.nav-item .academics-nav:hover + .dropdown_hide{
-   opacity: 1;
-    top: 80%;
+
+.active_nav .nav-link:hover {
+    color: #ffb606 !important;
+}
+
+.nav-item .about-nav:hover .dropdown_hide {
+    opacity: 1;
+    top: 90%;
+    visibility: visible;
+}
+
+.nav-item .academics-nav:hover .dropdown_hide {
+    opacity: 1;
+    top: 90%;
+    visibility: visible;
+}
+.nav-item .administration-nav:hover .dropdown_hide {
+    opacity: 1;
+    top: 90%;
+    visibility: visible;
+}
+.nav-item .students-nav:hover .dropdown_hide {
+    opacity: 1;
+    top: 90%;
+    visibility: visible;
 }
