@@ -5,6 +5,8 @@ import lightLogo from "../../../image/du-logo-light.png";
 import darkLogo from "../../../image/du-logo.png";
 import AboutDropdown from "../AboutDropdown/AboutDropdown";
 import "./Navigation.css";
+
+
 const Navigation = () => {
   const [navScroll, setNavScroll] = useState(false);
   const [search, setSearch] = useState(false);
@@ -19,7 +21,8 @@ const Navigation = () => {
   window.addEventListener("scroll", changeNave);
 
   return (
-    <header style={{ position: 'relative' }}>
+   <React.Fragment>
+     <header style={{ position: 'relative' }}>
       <nav
         className={`navbar navbar-expand-lg navbar-light   ${navScroll && "bg-light navbar-top"
           }`}
@@ -58,15 +61,8 @@ const Navigation = () => {
                 >
                   ABOUT
                 </a>
-                <ul className="dropdown-menu container" aria-labelledby="navbarDropdown">
-                    <li>
-                      <div  style={{height: '300px', padding: '15px'}}>
-                        <h1>Hello world</h1>
-                      </div>
-                    </li>
-                </ul>
               </li>
-              {/* <li className="nav-item ">
+              <li className="nav-item ">
                 <a
                   className={`nav-link dropdown-toggle about-nav ${!navScroll && "text-white"
                     }`}
@@ -142,7 +138,7 @@ const Navigation = () => {
                 >
                   <FontAwesomeIcon onClick={(e) => { setSearch(!search) }} icon={faSearch} />
                 </a>
-              </li> */}
+              </li>
             </ul>
           </div>
         </div>
@@ -171,6 +167,7 @@ const Navigation = () => {
 
 
     </header>
+   </React.Fragment>
   );
 };
 
