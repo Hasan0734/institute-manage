@@ -6,8 +6,9 @@
 }
 
 .nav-link {
-    padding: 35px 15px;
-    font-weight: 600;
+    padding: 35px 15px !important;
+    font-weight: 600 !important;
+    font-size: 14px !important;
 }
 
 .about-drop {
@@ -89,12 +90,26 @@
     top: 90%;
     visibility: visible;
 }
+
 .nav-item .administration-nav:hover .dropdown_hide {
     opacity: 1;
     top: 90%;
     visibility: visible;
 }
+
 .nav-item .students-nav:hover .dropdown_hide {
+    opacity: 1;
+    top: 90%;
+    visibility: visible;
+}
+
+.nav-item .research-nav:hover .dropdown_hide {
+    opacity: 1;
+    top: 90%;
+    visibility: visible;
+}
+
+.nav-item .link-nav:hover .dropdown_hide {
     opacity: 1;
     top: 90%;
     visibility: visible;

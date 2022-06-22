@@ -1,8 +1,9 @@
 import React from 'react';
 import './AboutMenu.css';
 import menuData from './menuData';
+
+
 const AboutMenu = () => {
-    console.log(menuData);
     return (
         <React.Fragment>
             <div className="row">

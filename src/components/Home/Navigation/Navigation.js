@@ -7,8 +7,10 @@ import AboutMenu from "./AboutMenu/AboutMenu";
 import AcademicsMenu from "./AcademicsMenu/AcademicsMenu";
 import AdministrationMenu from "./AdministrationMenu/AdministrationMenu";
 import Dropdown from "./Dropdown/Dropdown";
+import LinkMenu from "./LinkMenu/LinkMenu";
 import "./Navigation.css";
-import StudentsMenu from "./StudenstMenu/StudenstMenu";
+import ResearchMenu from "./ResearchMenu/ResearchMenu";
+import StudentsMenu from "./StudentsMenu/StudentsMenu";
 
 
 const Navigation = () => {
@@ -55,7 +57,7 @@ const Navigation = () => {
               <ul className="navbar-nav me-auto mb-2 mb-lg-0 w-100 d-flex justify-content-between">
                 <li className="nav-item active_nav ">
                   <a
-                    className={` about-nav nav-link ${!navScroll ? "text-white" : ""
+                    className={` about-nav nav-link ${!navScroll ? "text-white" : "fw-bold"
                       }`}
                     href="#"
 
@@ -108,43 +110,50 @@ const Navigation = () => {
                       }`}
                     href="#"
                   >
-                    STUDENT
-                    <i class="fas fa-angle-down"></i>
-                    <div className="administration-nav dropdown_hide  container position-absolute start-0">
+                    STUDENT <i class="fas fa-angle-down"></i>
+                    
+                    <div className="student-menu dropdown_hide  container position-absolute start-0">
                       <Dropdown>
                         <StudentsMenu/>
                       </Dropdown>
                     </div>
                   </a>
                 </li>
-                <li className="nav-item dropdown">
+                <li className="nav-item active_nav">
                   <a
-                    className={`nav-link dropdown-toggle ${!navScroll && "text-white"
+                    className={`nav-link research-nav ${!navScroll && "text-white"
                       }`}
                     href="#"
                    
                   >
-                    RESEARCH
+                    RESEARCH <i class="fas fa-angle-down"></i>
+                    <div className="research-menu dropdown_hide  position-absolute">
+                      <Dropdown>
+                        <ResearchMenu/>
+                      </Dropdown>
+                    </div>
                   </a>
+                  
                 </li>
-                <li className="nav-item dropdown">
+                <li className="nav-item active_nav">
                   <a
-                    className={`nav-link dropdown-toggle ${!navScroll && "text-white"
+                    className={`nav-link link-nav ${!navScroll && "text-white"
                       }`}
-                    href="#about"
-                    id="navbarDropdown"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
+                    href="#"
+            
                   >
-                    LINK
+                    LINK <i class="fas fa-angle-down"></i>
+                    <div className="link-menu dropdown_hide  position-absolute w-25">
+                      <Dropdown>
+                        <LinkMenu/>
+                      </Dropdown>
+                    </div>
                   </a>
                 </li>
                 <li className="nav-item ">
                   <a href="#search"
                     className={`nav-link top-search-bar ${!navScroll && "text-white"
                       }`}
-
                   >
                     <FontAwesomeIcon onClick={(e) => { setSearch(!search) }} icon={faSearch} />
                   </a>
@@ -153,6 +162,7 @@ const Navigation = () => {
             </div>
           </div>
         </nav>
+
         <div className="container">
           <div className="row d-flex justify-content-end">
             <div
