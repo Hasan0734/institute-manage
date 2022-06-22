@@ -24,7 +24,7 @@ const SliderImage = () => {
         loop={true}
         mouseDrag={false}
         nav={true}
-        navText = {["<i className='fa fa-angle-left'></i>", "<i className='fa fa-angle-right'></i>"]}
+        navText = {["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]}
         
       
       >
