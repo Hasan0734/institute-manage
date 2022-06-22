@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './HeaderTop.css';
 const HeaderTop = () => {
     return (
-        <div className="top-header-area">
+        <div className="top-header-area d-none d-md-block">
             <div className="container container-sm">
                 <ul className="links list-unstyled d-flex justify-content-end m-0">
                     <li><a className="btn btn-warning me-3 " href="#Home"><FontAwesomeIcon icon={faKey} /> Du Login</a></li>
