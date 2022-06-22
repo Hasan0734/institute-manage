@@ -62,7 +62,7 @@ const Navigation = () => {
                     href="#"
 
                   >
-                    ABOUT <i class="fas fa-angle-down"></i>
+                    ABOUT <i className="fas fa-angle-down"></i>
 
                     <div className="about-menu dropdown_hide  container position-absolute start-0">
                       <Dropdown>
@@ -78,7 +78,7 @@ const Navigation = () => {
                       }`}
                     href="#"
                   >
-                    ACADEMICS <i class="fas fa-angle-down"></i>
+                    ACADEMICS <i className="fas fa-angle-down"></i>
 
 
                     <div className="academics-menu dropdown_hide  container position-absolute start-0">
@@ -96,7 +96,7 @@ const Navigation = () => {
                     href="#"
                
                   >
-                    ADMINISTRATION <i class="fas fa-angle-down"></i>
+                    ADMINISTRATION <i className="fas fa-angle-down"></i>
                     <div className="administration-nav dropdown_hide  container position-absolute start-0">
                       <Dropdown>
                         <AdministrationMenu/>
@@ -110,7 +110,7 @@ const Navigation = () => {
                       }`}
                     href="#"
                   >
-                    STUDENT <i class="fas fa-angle-down"></i>
+                    STUDENT <i className="fas fa-angle-down"></i>
                     
                     <div className="student-menu dropdown_hide  container position-absolute start-0">
                       <Dropdown>
@@ -126,7 +126,7 @@ const Navigation = () => {
                     href="#"
                    
                   >
-                    RESEARCH <i class="fas fa-angle-down"></i>
+                    RESEARCH <i className="fas fa-angle-down"></i>
                     <div className="research-menu dropdown_hide  position-absolute">
                       <Dropdown>
                         <ResearchMenu/>
@@ -142,7 +142,7 @@ const Navigation = () => {
                     href="#"
             
                   >
-                    LINK <i class="fas fa-angle-down"></i>
+                    LINK <i className="fas fa-angle-down"></i>
                     <div className="link-menu dropdown_hide  position-absolute w-25">
                       <Dropdown>
                         <LinkMenu/>
@@ -172,13 +172,15 @@ const Navigation = () => {
               <div className="pb-4" >
                 <form className="text-end">
                   <div className="text-center">
-                    <input type="radio" id="web" name="search" value="web" checked />
-                    <label className="m-2 text-white" for="web" >Web</label>
+                    <input type="radio" id="web" name="search" value="web" defaultChecked />
+                    <label className="m-2 text-white" htmlFor="web" >Web</label>
                     <input className="m-2" type="radio" id="people" name="search" value="people" />
-                    <label className="text-white" for="people">People</label>
+                    <label className="text-white" htmlFor="people">People</label>
                   </div>
                   <input className="form-control" type="text" placeholder="Search" />
-                  <button className="search-btn" type="submit"><FontAwesomeIcon icon={faSearch} /></button>
+                  <button className="search-btn" type="submit">
+                    <FontAwesomeIcon icon={faSearch} />
+                    </button>
                 </form>
               </div>
             </div>

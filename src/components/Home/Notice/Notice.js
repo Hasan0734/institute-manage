@@ -7,7 +7,7 @@ const Notice = () => {
     return (
         <div className="notice">
 
-            {notices.map(() => <div className="pb-4 border-bottom px-4">
+            {notices.map((notice, i) => <div key={i} className="pb-4 border-bottom px-4">
                 <div className="card-body">
                     <h4 className="card-title notice-title text-justify">
                         <a href="/#">সম্মানিত শিক্ষক, কর্মকর্তা ও কর্মচারীদের ভ্যাকসিন সার্টিফিকেট,ভ্যাকসিন গ্রহণের প্রমাণপত্র প্রদান প্রসঙ্গে</a>

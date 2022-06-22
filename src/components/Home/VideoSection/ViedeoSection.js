@@ -44,9 +44,9 @@ const ViedeoSection = () => {
                     responsive={responsivenes}
                 >
 
-                    {videos.map(video => <div className="">
+                    {videos.map((video, i) => <div key={i} className="">
 
-                        <iframe width="100%" height="240" src={video.link} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                        <iframe width="100%" height="240" src={video.link} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
                         <h6 className="text-primary text-justify">{video.title}</h6>
                     </div>)}
 

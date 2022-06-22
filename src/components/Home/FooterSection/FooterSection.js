@@ -17,7 +17,7 @@ const FooterSection = () => {
                         <div className="col-md-2" data-aos="fade-up-left" data-aos-duration={3000}>
                             <h4 className="text-white fs-4">Useful Links</h4>
                             <ul className="footer-list-item">
-                                {firstLinkItem.map((item) => <li>
+                                {firstLinkItem.map((item , i) => <li key={i}>
                                     <a className="text-white text-decoration-none" href="#"><FontAwesomeIcon className="list-icon" icon={faAngleRight} /> {item}</a>
                                 </li>)}
                             </ul>
@@ -25,7 +25,7 @@ const FooterSection = () => {
                         <div className="col-md-3" data-aos="fade-up-right" data-aos-duration={3000}>
                             <h4 className="text-white fs-4">&nbsp;</h4>
                             <ul className="footer-list-item">
-                                {secondLinkitem.map((item) => <li>
+                                {secondLinkitem.map((item , i) => <li key={i}>
                                     <a className="text-white text-decoration-none" href="#"><FontAwesomeIcon className="list-icon" icon={faAngleRight} /> {item}</a>
                                 </li>)}
                             </ul>
@@ -33,7 +33,7 @@ const FooterSection = () => {
                         <div className="col-md-4" data-aos="fade-up-left" data-aos-duration={3000}>
                             <h4 className="text-white fs-4">&nbsp;</h4>
                             <ul className="footer-list-item">
-                                {thirdLinkitem.map((item) => <li>
+                                {thirdLinkitem.map((item , i) => <li key={i}>
                                     <a className="text-white text-decoration-none" href="#"><FontAwesomeIcon className="list-icon" icon={faAngleRight} /> {item}</a>
                                 </li>)}
                             </ul>

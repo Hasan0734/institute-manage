@@ -33,8 +33,8 @@ const ResearchCarousel = () => {
         responsive={responsivenes}
         loop margin={30}>
         {
-          data.map((dt) => <div>
-            <div class="card" data-aos="zoom-in" data-aos-duration="800"  data-aos-delay="300">
+          data.map((dt, i) => <div key={i}>
+            <div className="card" data-aos="zoom-in" data-aos-duration="800"  data-aos-delay="300">
               <img className="img-fluid" src={`https://picsum.photos/200/30${dt}`} style={{ height: '240px', width: '100%' }} alt="..." />
               <div className="d-flex align-items-center justify-content-end p-3">
                 <p className="m-0"> <FontAwesomeIcon className="text-warning" icon={faCalendarAlt} />  03 Sep, 2021</p>

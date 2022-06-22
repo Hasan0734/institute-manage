@@ -54,7 +54,7 @@ const UniversityNumbers = () => {
             <div className="numbers-area background-shadow" style={{ backgroundImage: `url(${bg})` }}>
                 <div className="container">
                     <div className="row">
-                        {numbers.map(number => <div className={`col-md-${number.col}`}>
+                        {numbers.map((number, i) => <div key={i} className={`col-md-${number.col}`}>
                             <div>
                                 <div className="d-flex justify-content-center">
                                     <div className="numbers-icon d-flex justify-content-center align-items-center">

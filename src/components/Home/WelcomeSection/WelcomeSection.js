@@ -25,7 +25,7 @@ const WelcomeSection = () => {
                             <button className="video-play-button" onClick={() => setOpenFirst(true)}><FontAwesomeIcon icon={faPlay} /></button>
                             <div style={{ position: 'relative' }}>
                                 <Modal open={openFirst} onClose={() => setOpenFirst(false)} center>
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/3gYMR7ppHbw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/3gYMR7ppHbw" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 </Modal>
                             </div>
                         </div>

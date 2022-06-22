@@ -42,9 +42,9 @@ const MobileNavigation = () => {
                                 <form className="text-end">
                                     <div className="text-center">
                                         <input type="radio" id="web" name="search" value="web" checked />
-                                        <label className="m-2 text-white" for="web" >Web</label>
+                                        <label className="m-2 text-white" htmlFor="web" >Web</label>
                                         <input className="m-2" type="radio" id="people" name="search" value="people" />
-                                        <label className="text-white" for="people">People</label>
+                                        <label className="text-white" htmlFor="people">People</label>
                                     </div>
                                     <input className="form-control" type="text" placeholder="Search" />
                                     <button className="search-btn" type="submit">

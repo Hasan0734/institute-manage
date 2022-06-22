@@ -22,7 +22,7 @@ const achievment = [
 const StudentAchievment = () => {
     return (
         <div className="achiev-box">
-            {achievment.map(achiev => <div data-aos="fade-up-left" data-aos-duration={3000} className="d-flex border-bottom pb-4 mb-4 ">
+            {achievment.map((achiev, i) => <div key={i} data-aos="fade-up-left" data-aos-duration={3000} className="d-flex border-bottom pb-4 mb-4 ">
 
                 <div className="achiev-img">
                     

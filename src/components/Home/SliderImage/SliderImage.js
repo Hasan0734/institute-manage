@@ -24,13 +24,12 @@ const SliderImage = () => {
         loop={true}
         mouseDrag={false}
         nav={true}
-        navText = {["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]}
+        navText = {["<i className='fa fa-angle-left'></i>", "<i className='fa fa-angle-right'></i>"]}
         
       
       >
-        {SliderData.map((slider) => (
-         
-          <div className="carousel-dark" style={{ backgroundImage: `url(${slider.image})`, }} >
+        {SliderData.map((slider, i) => <div key={i} className="carousel-dark"
+         style={{ backgroundImage: `url(${slider.image})` }} >
             <div className="container container-sm carousel-content d-flex align-items-center">
               <div className="row">
                 <div className="col-md-7 col-sm-12 text-white">
@@ -44,15 +43,14 @@ const SliderImage = () => {
                 </div>
                 <div className="col-md-5 col-sm-12 mt-sm-0 mt-5 text-white">
                   {slider.info.map((info, index, array) => (
-                    <h3 className={`fs-4 info-${array.length === 2 ? index + 5 : index}`}>
+                    <h3 key={index} className={`fs-4 info-${array.length === 2 ? index + 5 : index}`}>
                       <FontAwesomeIcon className="text-warning" icon={info.icon} /> {info.text}</h3>))}
                 </div>
               </div>
             </div>
 
           </div>
-        ))}
-
+        )}
       </OwlCarousel>
     </div >
   );

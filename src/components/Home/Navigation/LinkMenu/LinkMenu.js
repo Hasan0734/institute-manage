@@ -1,6 +1,6 @@
 import React from 'react';
 import menuData from './menuData';
-import './StudenstMenu.css';
+import './LinkMenu.css';
 
 const LinkMenu = () => {
 
@@ -10,7 +10,7 @@ const LinkMenu = () => {
                 <ul className="list-unstyled">
                     {menuData.map((item, index) => <li key={index} className="menu_link">
                         <a className="menu_link" href={item.url}>
-                            <i class="fas fa-angle-double-right me-1"></i>
+                            <i className="fas fa-angle-double-right me-1"></i>
                             {item.title}
                         </a>
                     </li>)}

@@ -15,7 +15,7 @@ const AboutMenu = () => {
                     <ul className="list-unstyled">
                         {data.items.map((item, index ) => <li key={index} className="menu_link">
                             <a className="menu_link" href={item.url}>
-                            <i class="fas fa-angle-double-right me-1"></i>
+                            <i className="fas fa-angle-double-right me-1"></i>
                                 {item.title}
                                 </a>
                         </li>)}

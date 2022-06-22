@@ -6,7 +6,7 @@ const array = [1, 2]
 const FeaturedNewsEvents = () => {
     return (
         <div className="row">
-            {array.map((arr) => <div className="col-md-6">
+            {array.map((arr, i) => <div key={i} className="col-md-6">
                 <div className="card" data-aos="fade-up" data-aos-duration={3000}>
                     <img className="img-fluid card-img-top" src={`https://picsum.photos/200/30${arr}`} style={{ height: '262px', width: '100%' }} alt="..." />
                     <div className="card-body p-4">
