@@ -28,7 +28,7 @@ const Navigation = () => {
 
   return (
     <React.Fragment>
-      <header style={{ position: 'relative' }}>
+      <header style={{ position: 'relative' }} className="d-none d-lg-block">
         <nav
           className={`navbar navbar-expand-lg navbar-light   ${navScroll && "bg-light navbar-top"
             }`}

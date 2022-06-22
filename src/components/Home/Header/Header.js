@@ -1,13 +1,15 @@
 import React from 'react';
 import HeaderTop from '../HeaderTop/HeaderTop';
+import MobileNavigation from '../Navigation/MobileNavigation/MobileNavigation';
 import Navigation from '../Navigation/Navigation';
 
 const Header = () => {
     return (
-        <div>
+        <React.Fragment>
             <HeaderTop></HeaderTop>
             <Navigation></Navigation>
-        </div>
+            <MobileNavigation />
+        </React.Fragment>
     );
 };
 
